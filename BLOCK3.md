@@ -29,3 +29,36 @@ M01 = Ex Ey 1*y*I(x, y)
 
 M10 = ------>
       ------->
+      
+      
+      
+      
+      
+      
+      
+      
+    ___________________-
+    
+    
+# 15/11/2021
+  
+## Based on color continuation
+   
+- Based on optical flow. 
+Third  type of segmentation, low level feature, kind of descriptor, represent motion.
+
+Possible application. Blur background in videocalls
+
+- Basic method:
+1. Compute optical flow between sequential frames
+2. For each pixel, compute magnitude of optical flow
+3. Normalize OF magnitude in [0, 1]
+4. If Mag(x,y) > T, then (x,y) is foreground
+
+Segmentation, decision per pixel -> background vs foreground
+Color -> single image
+Image difference and optical flow -> videos
+Noise reduction techniques
+   
+   
+   
